@@ -90,3 +90,88 @@ https://hub.docker.com/repository/docker/anmoiseenko/custom-nginx/general
 ![image](https://github.com/user-attachments/assets/e1fab547-3cd3-4a78-a79f-5f163c0732f9)
 12.![image](https://github.com/user-attachments/assets/bd477895-efe9-47d2-a59a-b7c1280eabc4)
 
+
+Задача 4
+1.Запустите первый контейнер из образа centos c любым тегом в фоновом режиме, подключив папку текущий рабочий каталог $(pwd) на хостовой машине в /data контейнера, используя ключ -v.
+2.Запустите второй контейнер из образа debian в фоновом режиме, подключив текущий рабочий каталог $(pwd) в /data контейнера.
+3.Подключитесь к первому контейнеру с помощью docker exec и создайте текстовый файл любого содержания в /data.
+4.Добавьте ещё один файл в текущий каталог $(pwd) на хостовой машине.
+5.Подключитесь во второй контейнер и отобразите листинг и содержание файлов в /data контейнера.
+В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
+
+Ответ.
+1.![image](https://github.com/user-attachments/assets/a6893daf-4a32-49f4-9511-ed56e9b65719)
+
+2.![image](https://github.com/user-attachments/assets/3d4eb876-b634-49db-8f51-5920e163816e)
+
+3.![image](https://github.com/user-attachments/assets/c44a071d-05d6-422b-98a7-bbb30775a687)
+
+4.![image](https://github.com/user-attachments/assets/30e67c93-e4d4-4fb9-9fed-9c2923ad7cd4)
+
+5.![image](https://github.com/user-attachments/assets/a61f41ab-535e-411a-8cdd-7edd11c188bd)
+
+
+Задача 5
+1.Создайте отдельную директорию(например /tmp/netology/docker/task5) и 2 файла внутри него. "compose.yaml" с содержимым:
+version: "3"
+services:
+  portainer:
+    network_mode: host
+    image: portainer/portainer-ce:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+"docker-compose.yaml" с содержимым:
+
+version: "3"
+services:
+  registry:
+    image: registry:2
+
+    ports:
+    - "5000:5000"
+И выполните команду "docker compose up -d". Какой из файлов был запущен и почему? (подсказка: https://docs.docker.com/compose/compose-application-model/#the-compose-file )
+
+2.Отредактируйте файл compose.yaml так, чтобы были запущенны оба файла. (подсказка: https://docs.docker.com/compose/compose-file/14-include/)
+
+3.Выполните в консоли вашей хостовой ОС необходимые команды чтобы залить образ custom-nginx как custom-nginx:latest в запущенное вами, локальное registry. Дополнительная документация: https://distribution.github.io/distribution/about/deploying/
+
+4.Откройте страницу "https://127.0.0.1:9000" и произведите начальную настройку portainer.(логин и пароль адмнистратора)
+
+5.Откройте страницу "http://127.0.0.1:9000/#!/home", выберите ваше local окружение. Перейдите на вкладку "stacks" и в "web editor" задеплойте следующий компоуз:
+
+version: '3'
+
+services:
+  nginx:
+    image: 127.0.0.1:5000/custom-nginx
+    ports:
+      - "9090:80"
+6.Перейдите на страницу "http://127.0.0.1:9000/#!/2/docker/containers", выберите контейнер с nginx и нажмите на кнопку "inspect". В представлении <> Tree разверните поле "Config" и сделайте скриншот от поля "AppArmorProfile" до "Driver".
+
+7.Удалите любой из манифестов компоуза(например compose.yaml). Выполните команду "docker compose up -d". Прочитайте warning, объясните суть предупреждения и выполните предложенное действие. Погасите compose-проект ОДНОЙ(обязательно!!) командой.
+
+В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод, файл compose.yaml , скриншот portainer c задеплоенным компоузом.
+
+
+Ответ.
+1.Compose.yaml является предпочтительным файлом
+![image](https://github.com/user-attachments/assets/9908764a-f6ce-4540-92b0-d8900278a537)
+![image](https://github.com/user-attachments/assets/9bc13c19-4e1f-45e1-8bf8-58557e5e0957)
+2.![image](https://github.com/user-attachments/assets/5a934a17-66ed-4b37-83c9-b4fa47f87247)
+![image](https://github.com/user-attachments/assets/dd22693c-a46b-4c0e-b0be-72e07c63614c)
+3.![image](https://github.com/user-attachments/assets/cf878a86-f43a-4984-aa34-c59663f016fb)
+4.![image](https://github.com/user-attachments/assets/b94ae284-a3e1-4723-a9d4-a2cf84b7bec5)
+![image](https://github.com/user-attachments/assets/8897d8ad-5122-46be-bb33-8427cad40ada)
+
+5.![image](https://github.com/user-attachments/assets/08f9aee1-2496-48f0-8c11-1d01417b22da)
+
+6.![image](https://github.com/user-attachments/assets/261ca470-b7f9-4a89-b405-ce4e170a6477)
+![image](https://github.com/user-attachments/assets/36f633e8-fb15-4e96-8156-94e941f8448c)
+
+
+7.![image](https://github.com/user-attachments/assets/a4ae51bf-a556-4d9c-af45-ab6f3d997ce9)
+
+
+
+
+
