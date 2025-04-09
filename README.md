@@ -2,6 +2,7 @@
 Выполнил Моисеенко Алексе  й Николаевич группа SHDEVOPS-17
 
 Задача 1
+
 Сценарий выполнения задачи:
 
 Установите docker и docker compose plugin на свою linux рабочую станцию или ВМ.
@@ -21,9 +22,11 @@ Hey, Netology
 Предоставьте ответ в виде ссылки на https://hub.docker.com/<username_repo>/custom-nginx/general .
 
 Ответ.
+
 https://hub.docker.com/repository/docker/anmoiseenko/custom-nginx/general
 
 Задача 2
+
 1.Запустите ваш образ custom-nginx:1.0.0 командой docker run в соответвии с требованиями:
 имя контейнера "ФИО-custom-nginx-t2"
 контейнер работает в фоне
@@ -33,6 +36,7 @@ https://hub.docker.com/repository/docker/anmoiseenko/custom-nginx/general
 4.Убедитесь с помощью curl или веб браузера, что индекс-страница доступна.
 
 Ответ.
+
 1.![image](https://github.com/user-attachments/assets/4f283712-db93-4543-9bbd-3220b3111a51)
 2.![image](https://github.com/user-attachments/assets/8a96bbfb-5010-42f9-84fc-d409f8a5df0f)
 3.![image](https://github.com/user-attachments/assets/28145e93-b2c4-4d3c-85b7-4a61d13c7f32)
@@ -41,6 +45,7 @@ https://hub.docker.com/repository/docker/anmoiseenko/custom-nginx/general
 
 
 Задача 3
+
 1.Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
 2.Подключитесь к контейнеру и нажмите комбинацию Ctrl-C.
 3.Выполните docker ps -a и объясните своими словами почему контейнер остановился.
@@ -56,6 +61,7 @@ https://hub.docker.com/repository/docker/anmoiseenko/custom-nginx/general
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
 Ответ.
+
 1.![image](https://github.com/user-attachments/assets/8f61617b-137a-463f-b096-47a3f8b56672)
 
 2.![image](https://github.com/user-attachments/assets/f6dc8348-c8be-4796-a7d7-5ec5714adc2d)
@@ -82,7 +88,5 @@ https://hub.docker.com/repository/docker/anmoiseenko/custom-nginx/general
 
 11.![image](https://github.com/user-attachments/assets/736c110e-d1e0-4022-94fa-34df6ef0d94d)
 ![image](https://github.com/user-attachments/assets/e1fab547-3cd3-4a78-a79f-5f163c0732f9)
-
-
 12.![image](https://github.com/user-attachments/assets/bd477895-efe9-47d2-a59a-b7c1280eabc4)
 
