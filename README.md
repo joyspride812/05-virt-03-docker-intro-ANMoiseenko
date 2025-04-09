@@ -21,6 +21,7 @@ Hey, Netology
 Соберите и отправьте созданный образ в свой dockerhub-репозитории c tag 1.0.0 (ТОЛЬКО ЕСЛИ ЕСТЬ ДОСТУП).
 Предоставьте ответ в виде ссылки на https://hub.docker.com/<username_repo>/custom-nginx/general .
 
+
 Ответ.
 https://hub.docker.com/repository/docker/anmoiseenko/custom-nginx/general
 
@@ -33,6 +34,7 @@ https://hub.docker.com/repository/docker/anmoiseenko/custom-nginx/general
 2.Не удаляя, переименуйте контейнер в "custom-nginx-t2"
 3.Выполните команду date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs custom-nginx-t2 -n1 ; docker exec -it custom-nginx-t2 base64 /usr/share/nginx/html/index.html
 4.Убедитесь с помощью curl или веб браузера, что индекс-страница доступна.
+
 
 Ответ.
 1.![image](https://github.com/user-attachments/assets/4f283712-db93-4543-9bbd-3220b3111a51)
@@ -57,6 +59,7 @@ https://hub.docker.com/repository/docker/anmoiseenko/custom-nginx/general
 11.Это дополнительное, необязательное задание. Попробуйте самостоятельно исправить конфигурацию контейнера, используя доступные источники в интернете. Не изменяйте конфигурацию nginx и не удаляйте контейнер. Останавливать контейнер можно.
 12.Удалите запущенный контейнер "custom-nginx-t2", не останавливая его.(воспользуйтесь --help или google)
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
+
 
 Ответ.
 1.![image](https://github.com/user-attachments/assets/8f61617b-137a-463f-b096-47a3f8b56672)
