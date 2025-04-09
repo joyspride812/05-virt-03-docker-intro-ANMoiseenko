@@ -169,7 +169,11 @@ services:
 ![image](https://github.com/user-attachments/assets/36f633e8-fb15-4e96-8156-94e941f8448c)
 
 
-7.![image](https://github.com/user-attachments/assets/a4ae51bf-a556-4d9c-af45-ab6f3d997ce9)
+7.![image](https://github.com/user-attachments/assets/6c1e5fdc-313f-481d-8802-19e7543eb529)
+Предупреждение о том что найден контейнер, который  не связан с актуальными сервисами в текущем Compose-файле. Удалить "безхозные" контейнеры, можно выполниввщс команду с флагом --remove-orphans.
+![image](https://github.com/user-attachments/assets/770a6446-8c75-450b-8d35-3d6d655bd8ca)
+
+
 
 
 
