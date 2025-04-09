@@ -22,7 +22,6 @@ Hey, Netology
 Предоставьте ответ в виде ссылки на https://hub.docker.com/<username_repo>/custom-nginx/general .
 
 Ответ.
-
 https://hub.docker.com/repository/docker/anmoiseenko/custom-nginx/general
 
 Задача 2
@@ -36,7 +35,6 @@ https://hub.docker.com/repository/docker/anmoiseenko/custom-nginx/general
 4.Убедитесь с помощью curl или веб браузера, что индекс-страница доступна.
 
 Ответ.
-
 1.![image](https://github.com/user-attachments/assets/4f283712-db93-4543-9bbd-3220b3111a51)
 2.![image](https://github.com/user-attachments/assets/8a96bbfb-5010-42f9-84fc-d409f8a5df0f)
 3.![image](https://github.com/user-attachments/assets/28145e93-b2c4-4d3c-85b7-4a61d13c7f32)
@@ -61,7 +59,6 @@ https://hub.docker.com/repository/docker/anmoiseenko/custom-nginx/general
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
 Ответ.
-
 1.![image](https://github.com/user-attachments/assets/8f61617b-137a-463f-b096-47a3f8b56672)
 
 2.![image](https://github.com/user-attachments/assets/f6dc8348-c8be-4796-a7d7-5ec5714adc2d)
